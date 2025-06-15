@@ -1,4 +1,3 @@
-// script.js
 const inputs = document.querySelectorAll('.code');
 
 inputs.forEach((input, index) => {
@@ -15,12 +14,12 @@ inputs.forEach((input, index) => {
             inputs[index - 1].focus();
             console.log("Focused back on: ", inputs[index - 1].id);
         }
-		describe('OTP Input Test', () => {
+    });
+});
+describe('OTP Input Test', () => {
     it('Checking Forward Typing', () => {
         cy.visit('path_to_your_index.html'); // Apne HTML file ka path yahan daalo
         cy.get('#code-1').type('1').should('have.value', '1');
         cy.get('#code-2').should('have.focus'); // Check if focus is on code-2
-    });
-});
     });
 });
