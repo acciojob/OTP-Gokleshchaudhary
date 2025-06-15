@@ -16,10 +16,3 @@ inputs.forEach((input, index) => {
         }
     });
 });
-describe('OTP Input Test', () => {
-    it('Checking Forward Typing', () => {
-        cy.visit('path_to_your_index.html'); // Apne HTML file ka path yahan daalo
-        cy.get('#code-1').type('1').should('have.value', '1');
-        cy.get('#code-2').should('have.focus'); // Check if focus is on code-2
-    });
-});
