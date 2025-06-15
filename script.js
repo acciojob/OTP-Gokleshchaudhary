@@ -1,11 +1,11 @@
-//your JS code here. If required.
-// script.js
 const inputs = document.querySelectorAll('.code');
 
 inputs.forEach((input, index) => {
     input.addEventListener('input', (e) => {
+        console.log("Input value: ", e.target.value);
         if (e.target.value.length === 1 && index < inputs.length - 1) {
             inputs[index + 1].focus();
+            console.log("Focused on: ", inputs[index + 1].id);
         }
     });
 
