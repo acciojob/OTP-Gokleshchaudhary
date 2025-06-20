@@ -26,3 +26,8 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
+.code:focus {
+    border-color: #007BFF;
+    outline: none;
+}
