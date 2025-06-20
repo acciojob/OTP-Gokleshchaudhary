@@ -28,6 +28,6 @@ body {
 }
 
 .code:focus {
-    border-color: #007BFF;
-    outline: none;
+    border-color: #007BFF; /* Change border color on focus */
+    outline: none; /* Remove outline */
 }

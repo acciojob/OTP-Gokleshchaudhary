@@ -51,3 +51,10 @@ document.addEventListener('DOMContentLoaded', () => {
         alert(`OTP Submitted: ${otp}`);
     });
 });
+describe('OTP Input Test', () => {
+    it('Checking Forward Typing', () => {
+        cy.visit('path/to/your/index.html'); // Update with the correct path
+        cy.get('#code-1').type('1'); // Type into the first input
+        cy.get('#code-2').should('be.focused'); // Check if the second input is focused
+    });
+});
